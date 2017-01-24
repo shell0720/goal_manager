@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Task Manager</title>
+
+    <link rel="stylesheet" href="/vendors/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/styles/style.css" />
+
+    <script type="text/javascript" src="/vendors/angular.min.js"></script>
+    <script type="text/javascript" src="/vendors/angular-route.min.js"></script>
+    <script type="text/javascript" src="/assets/scripts/script.js"></script>
+    <script type="text/javascript" src="/assets/scripts/controller.js"></script>
+    <script type="text/javascript" src="/assets/scripts/factory.js"></script>
+  </head>
+  <body>
+
+<header ng-include="'/assets/views/templates/header.html'"></header>
+
+<header ng-include="'/assets/views/templates/nav.html'"></header>
+
+<main ng-view></main>
+
+<header ng-include="'/assets/views/templates/footer.html'"></header>
+
+
+
+
+  </body>
+</html>

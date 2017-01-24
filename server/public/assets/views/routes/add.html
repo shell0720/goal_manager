@@ -1,0 +1,12 @@
+<form name="goalEntry">
+  <lable>Date</lable>
+  <input ng-model="goal.date" />
+
+  <lable>What is your goal?</lable>
+  <input ng-model="goal.goal_name" />
+
+  <lable>When do you want to finish it</lable>
+  <input ng-model="goal.goal_length" />
+
+  <button ng-click="submitGoal(goal)">Submit</button>
+</form>
