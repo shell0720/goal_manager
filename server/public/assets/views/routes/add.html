@@ -1,12 +1,38 @@
-<form name="goalEntry">
-  <lable>Date</lable>
-  <input ng-model="goal.date" />
+<div class="container">
+  <div id="goalEntry" name="goalEntry">
+  <div class="form-group row">
+  <label for="example-text-input" class="col-2 col-form-label">What is your goal?</label>
+  <div class="col-10">
+    <input ng-model="goal.goal_name" class="form-control" type="text" value="Artisanal kale" id="example-text-input">
+  </div>
+</div>
 
-  <lable>What is your goal?</lable>
-  <input ng-model="goal.goal_name" />
+<div class="form-group row">
+  <label for="example-date-input" class="col-2 col-form-label">Date</label>
+  <div class="col-10">
+    <input ng-model="goal.date" class="form-control" type="date" value="2011-08-19" id="example-date-input">
+  </div>
+</div>
 
-  <lable>When do you want to finish it</lable>
-  <input ng-model="goal.goal_length" />
+<div class="form-group row">
+  <label for="example-month-input" class="col-2 col-form-label">Month</label>
+  <div class="col-10">
+    <input class="form-control" type="month" value="2011-08" id="example-month-input">
+  </div>
+</div>
+<div class="form-group row">
+  <label for="example-week-input" class="col-2 col-form-label">Week</label>
+  <div class="col-10">
+    <input class="form-control" type="week" value="2011-W33" id="example-week-input">
+  </div>
+</div>
+<div class="form-group row">
+  <label for="example-time-input" class="col-2 col-form-label">When do you want to finish it</label>
+  <div class="col-10">
+    <input ng-model="goal.goal_length" class="form-control" type="time" value="13:45:00" id="example-time-input">
+  </div>
+</div>
+<button ng-click="submitGoal(goal)">Submit</button>
 
-  <button ng-click="submitGoal(goal)">Submit</button>
-</form>
+</div>
+</div>
