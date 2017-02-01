@@ -11,25 +11,27 @@ padding-top: 230px;
 font-size: 2em;
 height: 300px;
 width: 300px;
-margin: 54px;
-border:1px solid white;
-border-radius: 50px;
+margin: 10px 3%;
+border:1px solid floralwhite;
+/*border-radius: 50px;*/
 
 }
 
 .category li:hover {
-  border:10px solid white;
-  border-radius: 50px;
+  border:10px solid floralwhite;
+  /*border-radius: 50px;*/
 }
 
 
+
+
 a {
-  color: white;
+  color: floralwhite;
 
 }
 
 a:hover{
-  color: yellow;
+  color: black;
   text-decoration: none;
 }
 
@@ -78,7 +80,6 @@ margin: 100px auto;
 #img_description {
   position: absolute;
   bottom:0px;
-  right:-10px;
   background-color: #ece5dc;
   height: 50px;
   width: auto;
@@ -93,4 +94,11 @@ margin: 100px auto;
 
 .navbar-inverse .navbar-nav>.active>a {
   background-color: #08560a;
+}
+
+.news {
+  background-image: url("../image/news.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
 }
