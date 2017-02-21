@@ -22,5 +22,41 @@ myApp.config(["$routeProvider", function($routeProvider){
       templateUrl: "/assets/views/routes/about.html",
       controller: "ShowController"
       })
+      .when("/news", {
+      templateUrl: "/assets/views/routes/news.html",
+      controller: "AddController"
+      })
+      .when("/tools", {
+      templateUrl: "/assets/views/routes/tools.html",
+      controller: "AddController"
+      })
+      .when("/garagesale", {
+      templateUrl: "/assets/views/routes/garagesale.html",
+      controller: "AddController"
+      })
+      .when("/pets", {
+      templateUrl: "/assets/views/routes/pets.html",
+      controller: "AddController"
+      })
+      .when("/giveaway", {
+      templateUrl: "/assets/views/routes/giveaway.html",
+      controller: "AddController"
+      })
+      .when("/kids", {
+      templateUrl: "/assets/views/routes/kids.html",
+      controller: "AddController"
+      })
+      .when("/recipe", {
+      templateUrl: "/assets/views/routes/recipe.html",
+      controller: "AddController"
+      })
+      .when("/labor", {
+      templateUrl: "/assets/views/routes/labor.html",
+      controller: "AddController"
+      })
+      .when("/tutor", {
+      templateUrl: "/assets/views/routes/tutor.html",
+      controller: "AddController"
+      })
       .otherwise("/home");
 }]);
