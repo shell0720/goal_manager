@@ -20,6 +20,8 @@ myApp.controller("AddController", ["$scope", "GoalManager", function($scope, Goa
     console.log("deleted");
 
   };
+
+
 }]);
 
 myApp.controller("ShowController", ["$scope", "GoalManager", function($scope, GoalManager){

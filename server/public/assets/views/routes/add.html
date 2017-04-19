@@ -1,38 +1,74 @@
-<div class="container">
-  <div id="goalEntry" name="goalEntry">
-  <div class="form-group row">
-  <label for="example-text-input" class="col-2 col-form-label">What is your goal?</label>
-  <div class="col-10">
-    <input ng-model="goal.goal_name" class="form-control" type="text" value="Artisanal kale" id="example-text-input">
-  </div>
-</div>
-
-<div class="form-group row">
-  <label for="example-date-input" class="col-2 col-form-label">Date</label>
-  <div class="col-10">
-    <input ng-model="goal.date" class="form-control" type="date" value="2011-08-19" id="example-date-input">
-  </div>
-</div>
-
-<div class="form-group row">
-  <label for="example-month-input" class="col-2 col-form-label">Month</label>
-  <div class="col-10">
-    <input class="form-control" type="month" value="2011-08" id="example-month-input">
-  </div>
-</div>
-<div class="form-group row">
-  <label for="example-week-input" class="col-2 col-form-label">Week</label>
-  <div class="col-10">
-    <input class="form-control" type="week" value="2011-W33" id="example-week-input">
-  </div>
-</div>
-<div class="form-group row">
-  <label for="example-time-input" class="col-2 col-form-label">When do you want to finish it</label>
-  <div class="col-10">
-    <input ng-model="goal.goal_length" class="form-control" type="time" value="13:45:00" id="example-time-input">
-  </div>
-</div>
-<button ng-click="submitGoal(goal)">Submit</button>
+<div class="jumbotron">
+  <h2>Our neighborhood news board</h2>
+  <button type="button" class="btn btn-primary btn-lg center-block" data-toggle="modal" data-target="#goalEntry">Make a post</button>
 
 </div>
+  <div class="container" ng-repeat="goal in goalArray.result | orderBy: '-date'" >
+
+      <div class="row row-content">
+        <div class="col-md-5">
+          <h5> {{goal.date | date:'M/d/yyyy'}}</h5>
+        </div>
+
+        <div class="col-md-5">
+        <h5> {{goal.goal_name}}</h5>
+        </div>
+
+        <div class="col-md-2">
+          <button class="btn btn-warning" ng-click="deleteGoal(goal)">Delete</button>
+        </div>
+
+      <div class="col-md-12">
+          <h3> {{goal.goal_length}}</h3>
+      </div>
+
+      </div>
+  <hr />
+</div>
+
+
+
+<!-- Trigger the modal with a button -->
+
+<!-- Modal -->
+<div id="goalEntry" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Type your message</h4>
+      </div>
+      <div class="modal-body">
+        <h2>Neighborhood News</h2>
+        <div id="goalEntry" name="goalEntry" class="row row-content">
+          <div class="form-group">
+            <label for="example-date-input" class="col-2 col-form-label">Date</label>
+            <div>
+              <input ng-model="goal.date" class="form-control" type="date"  placeholder="please enter the date" id="example-date-input">
+            </div>
+          </div>
+           <div class="form-group">
+        <label for="example-text-input" class="col-2 col-form-label"> Your Name </label>
+        <div>
+          <input ng-model="goal.goal_name" class="form-control" type="text" placeholder="please enter your name" id="example-text-input">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="example-content-input" class="col-2 col-form-label"> Message Content </label>
+        <div>
+          <input ng-model="goal.goal_length" class="form-control" type="textarea" id="example-content-input">
+        </div>
+      </div>
+      <button class="btn btn-default" ng-click="submitGoal(goal)">Submit</button>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+        </div>
+    </div>
+
+  </div>
 </div>
