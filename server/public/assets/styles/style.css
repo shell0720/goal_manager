@@ -2,10 +2,10 @@
 /*large devices only */
 @media (min-width: 1200px) {
   .row-content {
-    width: 1140px;
+    width: 1300px;
   }
   .container{
-    width: 1170px;
+    width: 1440px;
     }
 }
 
@@ -60,15 +60,7 @@
 
 
 body{
-  /*background: #137891;*/
-  /*background: #9AC313;*/
-  /*background: #C0BFB6;*/
-  /*background: #ABB1C2;*/
-
   background: #fbfbfb;
-
-
-
 }
 
 
@@ -84,7 +76,7 @@ text-shadow: 2px 1px black;
 font-size: 2em;
 font-weight: bold;
 height: 240px;
-width: 360px;
+width: 305px;
 margin: 10px;
 }
 
@@ -120,15 +112,11 @@ h2 {
 .jumbotron {
   margin:0 auto;
   padding: 50px 0 10px;
-  /*background:#123629 ;*/
-  /*background: #ff9900;*/
-  /*background:  #FDDF43;*/
-    /*background:#137891;*/
   background: #ece5dc;
-  /*color: floralwhite;*/
   color: #123629;
-  height: 350px;
+
 }
+
 
 .row-footer {
   margin-bottom: 0;
@@ -140,16 +128,13 @@ h2 {
 .row-content {
   margin: 10px auto;
   padding: 20px 0px;
-
-
-  /*border-bottom: 1px ridge;*/
-
 }
 
 .news {
   box-shadow: 1px 1px 5px grey;
-}
+  width: 70%;
 
+}
 
 #contactForm {
 width:800px;
@@ -158,7 +143,6 @@ margin: 100px auto;
 
 #goalEntry {
   width: 90%;
-
 }
 
 #img_description {
@@ -174,17 +158,20 @@ margin: 100px auto;
 .page-header {
   border-bottom: none;
   text-align: center;
-
 }
 
 .page-header h2 {
   margin-bottom: 30px;
-
+  font-family: 'Kalam', serif;
+  font-size: 40px;
+  color:#6b3f26;
 }
+
 
 ._720kb-datepicker-calendar-day._720kb-datepicker-today {
   background:red;
   color:white;
+
 }
 /*.navbar-inverse {
   background-color: #123629;
@@ -193,3 +180,36 @@ margin: 100px auto;
 .navbar-inverse .navbar-nav>.active>a {
   background-color: #08560a;
 }*/
+
+h3 {
+font-family: 'Maven Pro', sans-serif;
+}
+
+.news h3 {
+  margin-top: 0;
+  text-align: left;
+
+}
+
+
+/*.header h1, p{
+  text-align: center;
+  padding: 30px;
+}*/
+
+h4 {
+  font-family: 'Architects Daughter', cursive;
+  font-size: 18px;
+  color:#6b3f26;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Kalam', serif;
+  font-weight: bold;
+
+}
+
+h2 {
+  font-family: 'Josefin Slab', serif;
+}
