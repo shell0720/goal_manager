@@ -1,20 +1,20 @@
 <div class="page-header">
-  <h2>Our neighborhood news board</h2>
-  <button type="button" class="btn btn-info btn-lg center-block" data-toggle="modal" data-target="#goalEntry">Make a post</button>
+  <h2>Tools Rental News Board</h2>
+  <button type="button" class="btn btn-info btn-lg center-block" data-toggle="modal" data-target="#toolEntry">Make a post</button>
 </div>
-  <div class="container" ng-repeat="goal in goalArray.result | orderBy: '-date'" >
+  <div class="container" ng-repeat="tool in toolArray.result | orderBy: '-date'" >
 
       <div class="news row row-content">
         <div class="col-lg-2">
-          <h3> {{goal.goal_name}}</h3>
-          <p> {{goal.date | date:'MM/dd/yyyy'}}</p>
+          <h3> {{tool.tool_name}}</h3>
+          <p> {{tool.date | date:'MM/dd/yyyy'}}</p>
         </div>
         <div class="col-lg-8">
-            <h3> {{goal.goal_length}}</h3>
+            <h3> {{tool.tool_info}}</h3>
         </div>
 
         <div class="col-lg-2">
-          <button class="btn btn-warning btn-sm pull-right" ng-click="deleteGoal(goal)">Delete</button>
+          <button class="btn btn-warning btn-sm pull-right" ng-click="deleteTool(tool)">Delete</button>
         </div>
 
 
@@ -27,7 +27,7 @@
 <!-- Trigger the modal with a button -->
 
 <!-- Modal -->
-<div id="goalEntry" class="modal fade" role="dialog">
+<div id="toolEntry" class="modal fade" role="dialog">
   <div class="modal-dialog">
 
     <!-- Modal content-->
@@ -38,12 +38,12 @@
       </div>
       <div class="modal-body">
         <h2>Neighborhood News</h2>
-        <div id="goalEntry" name="goalEntry" class="row row-content">
+        <div id="toolEntry" name="toolEntry" class="row row-content">
           <div class="form-group">
             <label for="example-date-input" class="col-2 col-form-label">Date</label>
             <div>
               <datepicker date-format="MM/dd/yyyy">
-                <input ng-model="goal.date" class="form-control"  placeholder="choose the date" id="example-date-input">
+                <input ng-model="tool.date" class="form-control"  placeholder="choose the date" id="example-date-input">
               </datepicker>
 
           </div>
@@ -51,18 +51,18 @@
            <div class="form-group">
             <label for="example-text-input" class="col-2 col-form-label"> Your Name </label>
            <div>
-          <input ng-model="goal.goal_name" class="form-control" type="text" placeholder="please enter your name" id="example-text-input">
+          <input ng-model="tool.tool_name" class="form-control" type="text" placeholder="please enter your name" id="example-text-input">
         </div>
       </div>
       <div class="form-group">
         <label for="example-content-input" class="col-2 col-form-label"> Message Content </label>
          <div>
-           <textarea ng-model="goal.goal_length" class="form-control" rows="5" id="example-content-input">
+           <textarea ng-model="tool.tool_info" class="form-control" rows="5" id="example-content-input">
          </textarea>
          </div>
 
         </div>
-        <button class="btn btn-primary btn-block" ng-click="submitGoal(goal)" data-dismiss="modal">Submit</button>
+        <button class="btn btn-primary btn-block" ng-click="submitTool(tool)" data-dismiss="modal">Submit</button>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default " data-dismiss="modal">Close</button>

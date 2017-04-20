@@ -141,7 +141,7 @@ width:800px;
 margin: 100px auto;
 }
 
-#goalEntry {
+#goalEntry, #toolEntry {
   width: 90%;
 }
 
@@ -162,7 +162,8 @@ margin: 100px auto;
 
 .page-header h2 {
   margin-bottom: 30px;
-  font-family: 'Kalam', serif;
+  font-family: 'Josefin Slab', serif;
+  font-weight: bold;
   font-size: 40px;
   color:#6b3f26;
 }

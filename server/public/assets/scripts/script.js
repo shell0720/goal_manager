@@ -28,7 +28,7 @@ myApp.config(["$routeProvider", function($routeProvider){
       })
       .when("/tools", {
       templateUrl: "/assets/views/routes/tools.html",
-      controller: "AddController"
+      controller: "ToolController"
       })
       .when("/garagesale", {
       templateUrl: "/assets/views/routes/garagesale.html",

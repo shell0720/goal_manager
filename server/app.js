@@ -6,10 +6,12 @@ var bodyParser = require('body-parser');
 //ROUTES
 var router = require('./modules/index.js');
 var goalRouter = require('./modules/goalRouter.js');
+var toolRouter = require('./modules/toolRouter.js');
 var db = require('./modules/db.js');
 
 // Models
 var Goals = require('./models/goals.js');
+var Tools = require('./models/tools.js');
 
 //BODYPARSER
 app.use(bodyParser.json());
@@ -17,6 +19,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 
 //URL
 app.use('/goal', goalRouter);
+app.use('/tool', toolRouter);
 app.use('/', router);
 
 //Setting local server

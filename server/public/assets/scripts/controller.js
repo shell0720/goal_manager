@@ -7,8 +7,6 @@ myApp.controller("AddController", ["$scope", "GoalManager", function($scope, Goa
   $scope.time = d.toDateString();
   console.log($scope.time);
 
-
-
   $scope.submitGoal = function(data) {
    GoalManager.postData(data);
 
