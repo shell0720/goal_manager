@@ -32,27 +32,27 @@ myApp.config(["$routeProvider", function($routeProvider){
       })
       .when("/garagesale", {
       templateUrl: "/assets/views/routes/garagesale.html",
-      controller: "AddController"
+      controller: "GSController"
       })
       .when("/pets", {
       templateUrl: "/assets/views/routes/pets.html",
-      controller: "AddController"
+      controller: "PetsController"
       })
       .when("/giveaway", {
       templateUrl: "/assets/views/routes/giveaway.html",
-      controller: "AddController"
+      controller: "GAController"
       })
       .when("/kids", {
       templateUrl: "/assets/views/routes/kids.html",
-      controller: "AddController"
+      controller: "KidsController"
       })
       .when("/recipe", {
       templateUrl: "/assets/views/routes/recipe.html",
-      controller: "AddController"
+      controller: "RecipeController"
       })
       .when("/labor", {
       templateUrl: "/assets/views/routes/labor.html",
-      controller: "AddController"
+      controller: "LaborController"
       })
       .when("/tutor", {
       templateUrl: "/assets/views/routes/tutor.html",

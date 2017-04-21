@@ -1,11 +1,11 @@
 var express = require('express');
 var router = express.Router();
 var path = require('path');
-var Tools = require('../models/tools.js');
+var Labors = require('../models/labor.js');
 
 //setting up goal manager rounter
 router.get("/", function(req, res){
-  Tools.find({}, function(err, data){
+  Labors.find({}, function(err, data){
     if (err){
       console.log(err);
     }
@@ -14,12 +14,12 @@ router.get("/", function(req, res){
 });
 
 router.post("/", function(req,res){
-  var addedTool = new Tools({
+  var addedLabor = new Labors({
     "date": req.body.date,
-    "tool_name": req.body.tool_name,
-    "tool_info":req.body.tool_info,
+    "labor_name": req.body.labor_name,
+    "labor_content":req.body.labor_content,
   });
-  addedTool.save(function(err, data){
+  addedLabor.save(function(err, data){
     if(err){
       console.log(err);
     }
@@ -29,7 +29,7 @@ router.post("/", function(req,res){
 
 router.delete('/:id', function(req,res){
   console.log(req.params);
-  Garage.findByIdAndRemove(req.params.id, function(err, data){
+  Labors.findByIdAndRemove(req.params.id, function(err, data){
     if (err) console.log(err);
     res.send(data);
 

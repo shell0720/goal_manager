@@ -1,11 +1,11 @@
 var express = require('express');
 var router = express.Router();
 var path = require('path');
-var Tools = require('../models/tools.js');
+var Garage = require('../models/garagesale.js');
 
 //setting up goal manager rounter
 router.get("/", function(req, res){
-  Tools.find({}, function(err, data){
+  Garage.find({}, function(err, data){
     if (err){
       console.log(err);
     }
@@ -14,12 +14,12 @@ router.get("/", function(req, res){
 });
 
 router.post("/", function(req,res){
-  var addedTool = new Tools({
+  var addedGarage = new Garage({
     "date": req.body.date,
-    "tool_name": req.body.tool_name,
-    "tool_info":req.body.tool_info,
+    "gs_name": req.body.gs_name,
+    "gs_info":req.body.gs_info,
   });
-  addedTool.save(function(err, data){
+  addedGarage.save(function(err, data){
     if(err){
       console.log(err);
     }

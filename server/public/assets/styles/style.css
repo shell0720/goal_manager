@@ -49,15 +49,12 @@
     width: auto;
     margin: 0;
     font-size: 18px;
-
   }
 }
 
 /********** Extra small devices only **********/
 @media (max-width: 767px) {
-
 }
-
 
 body{
   background: #fbfbfb;
@@ -91,7 +88,6 @@ a {
 span {
   position:relative;
   top:180px;
-
 }
 
 ._720kb-datepicker-calendar-month span {
@@ -103,8 +99,6 @@ a:hover{
   font-size: 1.1em;
 }
 
-
-
 h2 {
   text-align: center;
 }
@@ -114,13 +108,11 @@ h2 {
   padding: 50px 0 10px;
   background: #ece5dc;
   color: #123629;
-
 }
-
 
 .row-footer {
   margin-bottom: 0;
-  margin-top: 70px;
+  margin-top: 40px;
   padding: 20px 0px;
   background-color: #AfAfAf;
 }
@@ -133,7 +125,6 @@ h2 {
 .news {
   box-shadow: 1px 1px 5px grey;
   width: 70%;
-
 }
 
 #contactForm {
@@ -141,7 +132,7 @@ width:800px;
 margin: 100px auto;
 }
 
-#goalEntry, #toolEntry {
+#goalEntry, #toolEntry, #garageEntry, #giveawayEntry, #kidsEntry, #laborEntry, #petsEntry, #recipeEntry {
   width: 90%;
 }
 
@@ -168,35 +159,24 @@ margin: 100px auto;
   color:#6b3f26;
 }
 
-
 ._720kb-datepicker-calendar-day._720kb-datepicker-today {
   background:red;
   color:white;
-
-}
-/*.navbar-inverse {
-  background-color: #123629;
 }
 
-.navbar-inverse .navbar-nav>.active>a {
-  background-color: #08560a;
-}*/
-
-h3 {
-font-family: 'Maven Pro', sans-serif;
+.navbar .navbar-nav > li > a:hover,
+.navbar .navbar-nav > li > a:focus,
+.navbar .navbar-nav > .active > a:hover,
+.navbar .navbar-nav > .active > a:focus,
+.navbar .navbar-nav > .open >a {
+  background-color: #6b3f26;
+  color: white;
 }
 
 .news h3 {
   margin-top: 0;
   text-align: left;
-
 }
-
-
-/*.header h1, p{
-  text-align: center;
-  padding: 30px;
-}*/
 
 h4 {
   font-family: 'Architects Daughter', cursive;
@@ -205,12 +185,11 @@ h4 {
 }
 
 h1 {
-  text-align: center;
+  margin-left: 150px;
   font-family: 'Kalam', serif;
   font-weight: bold;
-
 }
 
-h2 {
+h2, h3 {
   font-family: 'Josefin Slab', serif;
 }

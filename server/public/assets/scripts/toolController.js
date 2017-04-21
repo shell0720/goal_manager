@@ -19,16 +19,3 @@ myApp.controller("ToolController", ["$scope", "GoalManager", function($scope, Go
 
 
 }]);
-
-myApp.controller("ShowController", ["$scope", "GoalManager", function($scope, GoalManager){
-  $scope.toolArray = GoalManager.tool;
-  GoalManager.getTool();
-  console.log("wow");
-
-  $scope.deleteTool = function(data){
-    GoalManager.deleteTool(data);
-    console.log("deleted");
-
-  };
-
-}]);
