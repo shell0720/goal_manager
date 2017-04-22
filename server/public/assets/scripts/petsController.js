@@ -4,7 +4,7 @@ myApp.controller("PetsController", ["$scope", "GoalManager", function($scope, Go
 
   $scope.submitPets = function(data) {
    GoalManager.postPets(data);
-
+   $scope.pet = {};
   };
 
   $scope.petsArray = GoalManager.pets;

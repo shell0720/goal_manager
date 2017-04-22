@@ -4,6 +4,7 @@ myApp.controller("KidsController", ["$scope", "GoalManager", function($scope, Go
 
   $scope.submitKids = function(data) {
    GoalManager.postKids(data);
+     $scope.kid = {};
   };
 
   $scope.kidsArray = GoalManager.kids;

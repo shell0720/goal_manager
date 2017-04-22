@@ -15,7 +15,8 @@ router.get("/", function(req, res){
 
 router.post("/", function(req,res){
   var addedTool = new Tools({
-    "date": req.body.date,
+    "date": Date.now(),
+    "tool_email": req.body.tool_email,
     "tool_name": req.body.tool_name,
     "tool_info":req.body.tool_info,
   });

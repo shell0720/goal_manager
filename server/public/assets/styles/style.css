@@ -176,6 +176,8 @@ margin: 100px auto;
 .news h3 {
   margin-top: 0;
   text-align: left;
+  font-weight: bold;
+
 }
 
 h4 {
@@ -184,12 +186,44 @@ h4 {
   color:#6b3f26;
 }
 
+
 h1 {
   margin-left: 150px;
   font-family: 'Kalam', serif;
   font-weight: bold;
 }
 
+
+
 h2, h3 {
   font-family: 'Josefin Slab', serif;
+
+}
+
+.links {
+  text-decoration: none;
+  font-family: 'Josefin Slab', serif;
+  font-size: 25px;
+
+}
+.links a {
+
+  text-decoration: none;
+  color: black;
+
+}
+
+.links a:hover {
+  color: grey;
+}
+
+.email, p {
+  text-decoration: none;
+  font-family: "verdana";
+  color: black;
+  font-size: 0.9em;
+}
+
+.email:hover {
+  color: grey;
 }

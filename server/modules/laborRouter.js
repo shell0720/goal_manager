@@ -15,7 +15,8 @@ router.get("/", function(req, res){
 
 router.post("/", function(req,res){
   var addedLabor = new Labors({
-    "date": req.body.date,
+    "date": Date.now(),
+    "labor_email": req.body.labor_email,
     "labor_name": req.body.labor_name,
     "labor_content":req.body.labor_content,
   });

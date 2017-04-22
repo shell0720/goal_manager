@@ -3,6 +3,7 @@ var Schema = mongoose.Schema;
 
 var Kids = new Schema({
   date: {type: Date, required: true},
+  kid_email: {type: String, required: true},
   kid_name: {type : String, required: true},
   kid_content: {type: String, required: true},
 });

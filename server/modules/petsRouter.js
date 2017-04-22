@@ -15,7 +15,8 @@ router.get("/", function(req, res){
 
 router.post("/", function(req,res){
   var addedPet = new Pets ({
-    "date": req.body.date,
+    "date": Date.now(),
+    "pet_email": req.body.pet_email,
     "pet_name": req.body.pet_name,
     "pet_content":req.body.pet_content,
   });

@@ -15,7 +15,8 @@ router.get("/", function(req, res){
 
 router.post("/", function(req,res){
   var addedGarage = new Garage({
-    "date": req.body.date,
+    "date": Date.now(),
+    "gs_email": req.body.gs_email,
     "gs_name": req.body.gs_name,
     "gs_info":req.body.gs_info,
   });

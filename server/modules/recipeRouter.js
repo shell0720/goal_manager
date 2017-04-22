@@ -15,7 +15,8 @@ router.get("/", function(req, res){
 
 router.post("/", function(req,res){
   var addedRecipe = new Recipes({
-    "date": req.body.date,
+    "date": Date.now(),
+    "recipe_email": req.body.recipe_email,
     "recipe_name": req.body.recipe_name,
     "recipe_content":req.body.recipe_content,
   });

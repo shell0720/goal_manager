@@ -4,6 +4,7 @@ myApp.controller("LaborController", ["$scope", "GoalManager", function($scope, G
 
   $scope.submitLabor = function(data) {
    GoalManager.postLabor(data);
+   $scope.labor = {};
 
   };
 

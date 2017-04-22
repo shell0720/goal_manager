@@ -3,6 +3,7 @@ var Schema = mongoose.Schema;
 
 var Garage = new Schema({
   date: {type: Date, required: true},
+  gs_email: {type: String, required: true},
   gs_name: {type : String, required: true},
   gs_info: {type: String, required: true},
 });

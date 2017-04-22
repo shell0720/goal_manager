@@ -15,7 +15,8 @@ router.get("/", function(req, res){
 
 router.post("/", function(req,res){
   var addedGoal = new Goals({
-    "date": req.body.date,
+    "date": Date.now(),
+    "goal_email": req.body.goal_email,
     "goal_name": req.body.goal_name,
     "goal_length":req.body.goal_length,
   });

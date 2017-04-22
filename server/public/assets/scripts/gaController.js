@@ -4,6 +4,7 @@ myApp.controller("GAController", ["$scope", "GoalManager", function($scope, Goal
 
   $scope.submitGA = function(data) {
    GoalManager.postGA(data);
+     $scope.giveaway = {};
 
   };
 

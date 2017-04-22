@@ -4,7 +4,7 @@ myApp.controller("ToolController", ["$scope", "GoalManager", function($scope, Go
 
   $scope.submitTool = function(data) {
    GoalManager.postTool(data);
-
+   $scope.tool = {};
   };
 
   $scope.toolArray = GoalManager.tool;

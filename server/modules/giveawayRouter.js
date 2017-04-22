@@ -15,7 +15,8 @@ router.get("/", function(req, res){
 
 router.post("/", function(req,res){
   var addedGiveaways = new Giveaways({
-    "date": req.body.date,
+    "date": Date.now(),
+    "giveaway_email": req.body.giveaway_email,
     "giveaway_name": req.body.giveaway_name,
     "giveaway_content":req.body.giveaway_content,
   });

@@ -4,6 +4,7 @@ myApp.controller("GSController", ["$scope", "GoalManager", function($scope, Goal
 
   $scope.submitGS = function(data) {
    GoalManager.postGS(data);
+   $scope.garagesale = {};
 
   };
 

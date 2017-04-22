@@ -9,6 +9,7 @@ myApp.controller("AddController", ["$scope", "GoalManager", function($scope, Goa
 
   $scope.submitGoal = function(data) {
    GoalManager.postData(data);
+   $scope.goal={};
 
   };
 
@@ -22,18 +23,5 @@ myApp.controller("AddController", ["$scope", "GoalManager", function($scope, Goa
 
   };
 
-
-}]);
-
-myApp.controller("ShowController", ["$scope", "GoalManager", function($scope, GoalManager){
-  $scope.goalArray = GoalManager.data;
-  GoalManager.getData();
-  console.log("wow");
-
-  $scope.deleteGoal = function(data){
-    GoalManager.deleteData(data);
-    console.log("deleted");
-
-  };
 
 }]);

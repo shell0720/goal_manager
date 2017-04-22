@@ -4,7 +4,7 @@ myApp.controller("RecipeController", ["$scope", "GoalManager", function($scope, 
 
   $scope.submitRecipe = function(data) {
    GoalManager.postRecipe(data);
-
+   $scope.recipe = {};
   };
 
   $scope.recipeArray = GoalManager.recipe;

@@ -3,6 +3,7 @@ var Schema = mongoose.Schema;
 
 var Tools = new Schema({
   date: {type: Date, required: true},
+  tool_email: {type: String, required: true},
   tool_name: {type : String, required: true},
   tool_info: {type: String, required: true},
 });

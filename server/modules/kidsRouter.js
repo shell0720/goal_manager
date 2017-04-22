@@ -15,7 +15,8 @@ router.get("/", function(req, res){
 
 router.post("/", function(req,res){
   var addedKid = new Kids({
-    "date": req.body.date,
+    "date": Date.now(),
+    "kid_email": req.body.kid_email,
     "kid_name": req.body.kid_name,
     "kid_content":req.body.kid_content,
   });
