@@ -4,10 +4,11 @@ var mongoose = require("mongoose");
 
  var mongoURI =
 'mongodb://mongodb://localhost/goal_manager'||
-'mongodb://michelle:12345@ds117821.mlab.com:17821/heroku_n6rx4jq0';
+'mongodb://xiaoxiao:123@ds117821.mlab.com:17821/heroku_n6rx4jq0';
 
+mongoose.connect(mongoURI);
 
-var MongoDB = mongoose.connect(mongoURI).connection;
+var MongoDB = mongoose.connection;
 
 MongoDB.on("error", function(err){
   console.log("Mongo Connection Error: ", err);
