@@ -11,16 +11,14 @@ myApp.config(["$routeProvider", function($routeProvider){
       controller: "AddController"
       })
       .when("/view", {
-      templateUrl: "/assets/views/routes/view.html",
-      controller: "ShowController"
+      templateUrl: "/assets/views/routes/view.html"
       })
       .when("/contact", {
-      templateUrl: "/assets/views/routes/contact.html",
-      controller: "ShowController"
+      templateUrl: "/assets/views/routes/contact.html"
+      // controller: "ShowController"
       })
       .when("/about", {
-      templateUrl: "/assets/views/routes/about.html",
-      controller: "ShowController"
+      templateUrl: "/assets/views/routes/about.html"
       })
       .when("/news", {
       templateUrl: "/assets/views/routes/news.html",
