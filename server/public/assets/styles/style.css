@@ -7,64 +7,42 @@
   .container{
     width: 1440px;
     }
+
 }
 
 /*medium devices only */
 @media (min-width: 992px) and (max-width: 1199px) {
   .row-content {
-    width: 760px;
+    width: 975px;
   }
+
   .container {
     padding: 0;
   }
 
-  #img_description {
-    position: absolute;
-    bottom:0px;
-    right: 0px;
-    background-color: #ece5dc;
-    height: 50px;
-    width: auto;
-    margin: 0;
-    font-size: 18px;
-
-  }
 }
 
 /*small devices only*/
 @media (max-width: 991px) and (min-width:768px) {
-  .row-content {
-    width: 760px;
-  }
-  .container {
-    width: 790px;
-  }
 
-  #img_description {
-    position: absolute;
-    bottom:0px;
-    right: -87px;
-    background-color: #ece5dc;
-    height: 50px;
-    width: auto;
-    margin: 0;
-    font-size: 18px;
-  }
 }
 
 /********** Extra small devices only **********/
 @media (max-width: 767px) {
+  h2{
+    font-size: 0.6em;
+  }
 }
+
+
+
+
 
 body{
   background: #fbfbfb;
 }
 
 
-/*.category:nth-child(odd) {
-  background: #C0BFB6;
-
-}*/
 .category li {
 display: inline-block;
 text-decoration: none;
@@ -85,14 +63,12 @@ a {
   color: floralwhite;
 }
 
-span {
+.category span {
   position:relative;
   top:180px;
 }
 
-._720kb-datepicker-calendar-month span {
-  top:0;
-}
+
 a:hover{
   color: floralwhite;
   text-decoration: none;
@@ -101,6 +77,7 @@ a:hover{
 
 h2 {
   text-align: center;
+  font-size: 25px;
 }
 
 .jumbotron {
@@ -128,14 +105,18 @@ h2 {
 }
 
 #contactForm {
-width:800px;
-margin: 100px auto;
+width:90%;
+margin: auto;
+
 }
 
 #goalEntry, #toolEntry, #garageEntry, #giveawayEntry, #kidsEntry, #laborEntry, #petsEntry, #recipeEntry {
   width: 90%;
 }
 
+img {
+  padding-left: 30px;
+}
 #img_description {
   position: absolute;
   bottom:0px;
@@ -143,7 +124,7 @@ margin: 100px auto;
   height: 50px;
   width: auto;
   margin: 0;
-  padding:0 80px;
+  padding:0 90px;
 }
 
 .page-header {
@@ -159,10 +140,10 @@ margin: 100px auto;
   color:#6b3f26;
 }
 
-._720kb-datepicker-calendar-day._720kb-datepicker-today {
+/*._720kb-datepicker-calendar-day._720kb-datepicker-today {
   background:red;
   color:white;
-}
+}*/
 
 .navbar .navbar-nav > li > a:hover,
 .navbar .navbar-nav > li > a:focus,
@@ -182,15 +163,15 @@ margin: 100px auto;
 
 h4 {
   font-family: 'Architects Daughter', cursive;
-  font-size: 18px;
+  font-size: 16px;
   color:#6b3f26;
 }
 
 
 h1 {
-  margin-left: 150px;
   font-family: 'Kalam', serif;
   font-weight: bold;
+  text-align: center;
 }
 
 
