@@ -7,23 +7,26 @@
 
 /*medium devices only */
 @media (min-width: 992px) and (max-width: 1199px) {
-  .row-content {
-    width: 975px;
-  }
-
-  .container {
-    padding: 0;
-  }
-
-  .row-content {
-    width: 975px;
-  }
-
-  .container {
-    padding: 0;
-  }
-
+  .navbar-collapse.collapse {
+     display: none !important;
+ }
+ .navbar-collapse.collapse.in {
+     display: block !important;
+ }
+ .navbar-header .collapse, .navbar-toggle {
+     display:block !important;
+ }
+ .navbar-header {
+     float:none;
+ }
+ .navbar {
+   overflow: hidden;
+   position: fixed !important; /* Set the navbar to fixed position */
+   top: 0; /* Position the navbar at the top of the page */
+   width: 100%; /* Full width */
 }
+}
+
 
 /*small devices only*/
 @media (max-width: 991px) and (min-width:768px) {
@@ -46,31 +49,13 @@
    width: 100%; /* Full width */
 }
 
+.category {
+  width: 700px;
 }
 
-/*small devices only*/
-@media (max-width: 991px) and (min-width:768px) {
-  .navbar-collapse.collapse {
-     display: none !important;
- }
- .navbar-collapse.collapse.in {
-     display: block !important;
- }
- .navbar-header .collapse, .navbar-toggle {
-     display:block !important;
- }
- .navbar-header {
-     float:none;
- }
- .navbar {
-   overflow: hidden;
-   position: fixed !important; /* Set the navbar to fixed position */
-   top: 0; /* Position the navbar at the top of the page */
-   width: 100%; /* Full width */
-}
 #img_description {
   padding: 10px 40px !important;
-  font-size: 0.7em;
+  font-size: 0.6em;
 }
 #tree {
   margin: auto !important;
@@ -101,7 +86,7 @@ header h2{
 }
 #img_description {
   padding: 5px 90px !important;
-  font-size: 0.7em;
+  font-size: 0.5em;
 
 }
 #tree {
@@ -109,6 +94,21 @@ header h2{
   margin: 0 20px !important;
 }
 
+.category, row {
+  width: 320px;
+}
+
+.category li {
+display: inline-block;
+text-decoration: none;
+text-align: center;
+text-shadow: 2px 1px black;
+font-size: 2em;
+font-weight: bold;
+height: 240px;
+width: 300px !important;
+margin: 10px !important;
+}
 
 }
 
@@ -129,13 +129,15 @@ text-shadow: 2px 1px black;
 font-size: 2em;
 font-weight: bold;
 height: 240px;
-width: 325px;
-margin: 13px;
+width: 320px;
+margin: 15px;
 }
 
 .category li:hover {
 opacity: 0.9;
 }
+
+
 
 a {
   color: floralwhite;
@@ -173,7 +175,7 @@ h2 {
 }
 
 .row-content {
-  margin: 10px auto;
+  margin: auto;
   padding: 20px 0px;
 }
 
