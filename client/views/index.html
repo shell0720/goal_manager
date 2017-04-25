@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+
+<!-- <styles>-->
+    <link rel="icon" type="image/png" href="assets/image/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="assets/image/favicon-16x16.png" sizes="16x16" />
+    <link rel="stylesheet" href="/vendors/bootstrap.min.css">
+    <link rel="stylesheet" href="/vendors/font-awesome.min.css" >
+    <link rel="stylesheet" href="/vendors/bootstrap-social.css" >
+    <link rel="stylesheet" href="/assets/styles/style.css" />
+    <link rel="stylesheet" href="/vendors/angular-datepicker.css" />
+    <!-- <link href="https://fonts.googleapis.com/css?family=Concert+One|Maven+Pro|Ranga" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=Architects+Daughter|Josefin+Slab|Kalam" rel="stylesheet">
+
+<!-- <script></script> -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/vendors/transition.js"></script>
+    <script type="text/javascript" src="/vendors/angular.min.js"></script>
+    <script type="text/javascript" src="/vendors/angular-datepicker.min.js"></script>
+    <script type="text/javascript" src="/vendors/angular-route.min.js"></script>
+    <script type="text/javascript" src="/assets/scripts/script.js"></script>
+    <script type="text/javascript" src="/assets/scripts/controller.js"></script>
+    <script type="text/javascript" src="/assets/scripts/toolController.js"></script>
+    <script type="text/javascript" src="/assets/scripts/gsController.js"></script>
+    <script type="text/javascript" src="/assets/scripts/gaController.js"></script>
+    <script type="text/javascript" src="/assets/scripts/kidsController.js"></script>
+    <script type="text/javascript" src="/assets/scripts/laborController.js"></script>
+    <script type="text/javascript" src="/assets/scripts/petsController.js"></script>
+    <script type="text/javascript" src="/assets/scripts/recipeController.js"></script>
+    <script type="text/javascript" src="/assets/scripts/factory.js"></script>
+  </head>
+  <body>
+
+<header ng-include="'/assets/views/templates/header.html'"></header>
+
+<header ng-include="'/assets/views/templates/nav.html'"></header>
+
+<main ng-view></main>
+
+<header ng-include="'/assets/views/templates/footer.html'"></header>
+
+
+
+
+  </body>
+</html>
