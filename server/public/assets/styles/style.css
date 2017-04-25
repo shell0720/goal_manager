@@ -74,7 +74,7 @@ header h2{
 }
 
 /********** Extra small devices only **********/
-@media (max-width: 767px) {
+@media (max-width: 767px) and (min-width:321px){
   h2{
     font-size: 18px !important;
   }
@@ -94,7 +94,7 @@ header h2{
   margin: 0 20px !important;
 }
 
-.category, row {
+.category {
   width: 320px;
 }
 
@@ -110,12 +110,51 @@ width: 300px !important;
 margin: 10px !important;
 }
 
+.container {
+  margin: 0 !important;
+}
+
+}
+
+@media (max-width: 320px) {
+
+  .category li {
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  text-shadow: 2px 1px black;
+  font-size: 2em;
+  font-weight: bold;
+  height: 240px;
+  width: 260px !important;
+  margin: 15px !important;
+  }
+
+  .category {
+    width: 290px;
+  }
+
+  h2{
+    font-size: 15px !important;
+  }
+
+  header h1 {
+    font-size: 30px !important;
+  }
+
+  #img_description {
+    padding: 5px 90px !important;
+    font-size: 0.5em;
+
+  }
+  #tree {
+    width: 70% !important;
+    margin: 0 20px !important;
+  }
 }
 
 
-
-
-
+/*regular css*/
 body{
   background: #fbfbfb;
 }
@@ -162,7 +201,7 @@ h2 {
 
 .jumbotron {
   margin:0 auto;
-  padding: 50px 0 10px;
+  /*padding: 50px 0 10px;*/
   background: #ece5dc;
   color: #123629;
 }
@@ -203,6 +242,7 @@ margin: auto;
   width: auto;
   margin: 0;
   padding:0 60px;
+
 }
 #tree {
   padding: 0 0 20px 60px ;
